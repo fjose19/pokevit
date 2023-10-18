@@ -48,6 +48,7 @@
     height: 100vh;
     background: rgb(24,121,211); 
     background: linear-gradient(180deg, rgba(24,121,211,1) 0%, rgba(12,75,116,1) 0%, rgba(13,143,255,1) 70%);
+    background-position: 100%;
    }
 
     footer{

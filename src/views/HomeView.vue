@@ -49,19 +49,25 @@
 
       <div class="container text-center">
         <div class="row mt-5">
-          <div class="col-sm-12 col-md-6">
+          <div class="col-sm-6 col-md-6">
+          
+            <div class="card-selected">
+
+              <cardPokemonSelected 
             
-            <cardPokemonSelected 
-            
-               :name ="selectedPokemon?.name"
-               :xp ="selectedPokemon?.base_experience"
-               :height="selectedPokemon?.height"
-               :img="selectedPokemon?.sprites.other.dream_world.front_default"
-               :loading="loading"
-            
-            />
+                  :name ="selectedPokemon?.name"
+                  :xp ="selectedPokemon?.base_experience"
+                  :height="selectedPokemon?.height"
+                  :img="selectedPokemon?.sprites.other.dream_world.front_default"
+                  :loading="loading"
+              
+              />
+
+
+            </div>
+         
           </div>
-          <div class="col-sm-12 col-md-6">
+          <div class="col-sm-6 col-md-6">
             <div class="card">
 
            
@@ -105,4 +111,27 @@
          overflow-x: hidden;
          max-height: 75vh;
       }
+
+      .card-selected{
+        margin-top: 5%;
+        max-height: 75vh;
+      }
+
+      @media (min-width: 360px) {
+      
+      }
+
+
+
+      @media (min-width: 740px) {
+  
+
+   
+      }
+
+
+   
+
+     
+
 </style>

@@ -11,7 +11,7 @@
               <div class="card-body">
                 <h5 class="card-title text-center">{{ pokemon.name || '????' }}</h5>
                 <hr>
-                <div class="row">
+                <div class="row texto">
                     <section class="col">
                         <strong>XP:</strong>
                         <span>{{ pokemon.xp }}</span>
@@ -35,11 +35,45 @@
         background: rgb(72,63,251);
         background: radial-gradient(circle, rgba(244, 160, 63, 0.8) 0%, rgba(238, 28, 28, 0.8)100%);
         height: 75vh;
+        overflow: none;
     }
 
     img{
-      height: 300px;
+      height: 50vh;
       padding: 5%;
     }
+
+    @media (min-width: 360px) {
+        .cardListPokemon {
+         overflow-y: scroll;
+         overflow-x: hidden;
+         height: 45vh;
+         }
+         img{
+            height: 30vh;
+            padding: 5%;
+          }
+      }
+    @media (min-width: 740px) {
+        .cardListPokemon {
+         overflow-y: scroll;
+         overflow-x: hidden;
+         height: 60vh;
+         margin-top: -5%;
+         }
+
+         img{
+            height: 45vh;
+            padding: 5%;
+          }
+         .texto{
+            margin-top: -4%;
+         }
+
+         .card-title{
+           margin-top: -10%;
+         } 
+       
+      }
 
 </style>
